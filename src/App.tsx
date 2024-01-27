@@ -4,22 +4,55 @@ import './App.css';
 
 function App() {
   return (
+    <>
+    <div className='head'> Expanse Tracker App </div>     
+
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+
+
+      <div className='input-data'>
+
+        <form className='frm'>
+          <label className='lable'>Total monthly income
+            <input className='input' type='text' name=''/>
+          </label>
+          <br />
+
+          <label className='lable'>EMI Insurance
+            <input className='input' type='text' name=''/>
+          </label>
+
+          <br />
+
+          <label className='lable'> Insurance
+            <input className='input' type='text' name=''/>
+          </label>
+
+          <br />
+
+          <label className='lable'>Home Expences
+            <input className='input' type='text' name=''/>
+          </label> 
+
+          <br />
+
+          <label className='lable'>Vheical  Expences
+            <input className='input' type='text' name=''/>
+          </label> 
+
+          <br />
+
+          <label className='lable'>Other
+            <input className='input' type='text' name=''/>
+          </label>
+           
+          <button className="button">Click Me</button> 
+        </form>
+      </div>
     </div>
+    </>
   );
 }
 
