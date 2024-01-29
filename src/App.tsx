@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Balance from './components/Balance';
 
 function App() {
+ 
+  const [income, setIncome ]= useState('');
+  const [emi, setEmi ]= useState('');
+  const [insurance, setInsurance ]= useState('');
+  const [home, setHome ]= useState('');
+  const [vheical, setVheical ]= useState('');
+  const [other, setOther ]= useState('');
+
+ 
+  // console.log(income)
+  const click =()=>{
+    console.log(income);
+  }
+  
   return (
     <>
     <div className='head'> Expanse Tracker App </div>     
@@ -10,46 +25,14 @@ function App() {
 
     <div className="App">
       
-
+       
 
       <div className='input-data'>
+      <Balance/>
 
         <form className='frm'>
-          <label className='lable'>Total monthly income
-            <input className='input' type='text' name=''/>
-          </label>
-          <br />
-
-          <label className='lable'>EMI Insurance
-            <input className='input' type='text' name=''/>
-          </label>
-
-          <br />
-
-          <label className='lable'> Insurance
-            <input className='input' type='text' name=''/>
-          </label>
-
-          <br />
-
-          <label className='lable'>Home Expences
-            <input className='input' type='text' name=''/>
-          </label> 
-
-          <br />
-
-          <label className='lable'>Vheical  Expences
-            <input className='input' type='text' name=''/>
-          </label> 
-
-          <br />
-
-          <label className='lable'>Other
-            <input className='input' type='text' name=''/>
-          </label>
-           
-          <button className="button">Click Me</button> 
-        </form>
+          
+         </form>
       </div>
     </div>
     </>
